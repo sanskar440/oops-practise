@@ -1,0 +1,42 @@
+using System;
+
+// Base class
+class Shape
+{
+    public virtual void Draw()
+    {
+        Console.WriteLine("Drawing a shape");
+    }
+}
+
+// Derived class 
+class Circle : Shape
+{
+    public override void Draw()
+    {
+        Console.WriteLine("Drawing a circle");
+    }
+}
+//derived class2
+class Square : Shape
+{
+    public override void Draw()
+    {
+        Console.WriteLine("Drawing a square");
+    }
+}
+
+class Program
+{
+    static void Main()
+    {
+        Shape shape1 = new Circle();
+        Shape shape2 = new Square();
+
+      
+        shape1.Draw(); 
+        shape2.Draw(); 
+
+        Console.ReadLine();
+    }
+}

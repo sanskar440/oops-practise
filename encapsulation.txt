@@ -1,0 +1,28 @@
+using System;
+public class Person
+{
+    private string name;
+
+    public string Name
+    {
+        get { return name; }
+        set { name = value; }
+    }
+
+  
+    public void DisplayGreeting()
+    {
+        Console.WriteLine($"Hello, my name is {Name}!");
+    }
+}
+
+class Program
+{
+    static void Main()
+    {
+        Person person = new Person();
+        person.Name = "John";
+        person.DisplayGreeting();
+        Console.ReadLine();
+    }
+}
